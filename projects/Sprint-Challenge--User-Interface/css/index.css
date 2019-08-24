@@ -1,0 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+@keyframes nav-transition1{ /*this will be used to define my animation for nav buttons when you mouse over*/
+  from{
+    background-color:white;
+    color:black;
+  }
+  to{
+    background-color:black;
+    color:white;
+  }
+}
+@keyframes nav-transition2{ /*this will be used to define my animation for nav buttons when your mouse isnt hovering*/
+  from{
+    background-color:black;
+    color:white;
+  }
+  to{
+    background-color:white;
+    color:black;
+  }
+
+}
+header {
+	display:flex;
+	justify-content: space-between;
+	margin: 20px 0 30px 0;
+
+}
+
+header nav {
+	display:flex;
+	justify-content: space-between;
+	align-content: flex-end;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	text-decoration: none;
+
+}
+
+header nav a{
+	text-decoration: none;
+	align-content: flex-end;
+	color:black;
+	margin: 22px 65px 0 0px;
+	font-size: 18px;
+	animation-name:nav-transition2;
+  animation-duration:1s;
+}
+
+header nav a:hover{
+	text-decoration: none;
+	align-content: flex-end;
+	color:black;
+	margin: 22px 65px 0 0px;
+	font-size: 18px;
+	animation-name:nav-transition1;
+  animation-duration:1s;
+}
+
+
+
+.indent{
+	margin: 0 25px;
+}
+.top-banner{
+	width:800px;
+	margin: 10px 0 30px 0;
+}
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-content .text-container {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+		font-size: 16px;
+}
+
+.middle-content {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.middle-content h2 {
+    padding: 0 2%;
+    margin-bottom: 0;
+}
+
+.middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+		color:white;
+}
+
+.middle-content .boxes div {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+		font-size: 16px;
+}
+
+.bottom-content {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+}
+
+.bottom-content .text-container {
+    padding-right: 4%;
+		font-size: 16px;
+}
+
+.bottom-content .text-container:last-child {
+    padding-right: 0;
+}
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+		animation-name:nav-transition1;
+	  animation-duration:1s;
+}
+
+footer nav a:hover{
+	color: black;
+	background-color:white;
+	text-decoration: none;
+	animation-name:nav-transition2;
+	animation-duration:1s;
+
+}
+
+button{
+	background-color: white;
+ 	color: black;
+  border: 2px solid black;
+	width: 100px;
+	height:35px;
+	border-radius: 5px;
+	margin: 15px 0;
+}
+
+.box1{
+	background-color: teal;
+	width: 12.5%;
+	height: 100px;
+	margin: 20px 2.5%;
+}
+.box2{
+	background-color: gold;
+	width: 12.5%;
+	height: 100px;
+	margin: 20px 2.5%;
+}
+.box3{
+	background-color: cadetblue ;
+	width: 12.5%;
+	height: 100px;
+	margin: 20px 2.5%;
+}
+.box4{
+	background-color: coral;
+	width: 12.5%;
+	height: 100px;
+	margin: 20px 2.5%;
+}
+.box5{
+	background-color: crimson;
+	width: 12.5%;
+	height: 100px;
+	margin: 20px 2.5%;
+}
+.box6{
+	background-color: forestgreen;
+	width: 12.5%;
+	height: 100px;
+	margin: 20px 2.5%;
+}
+.box7{
+	background-color: darkorchid;
+	width: 12.5%;
+	height: 100px;
+	margin: 20px 2.5%;
+}
+.box8{
+	background-color: hotpink;
+	width: 12.5%;
+	height: 100px;
+	margin: 20px 2.5%;
+}
+.box9{
+	background-color: indigo;
+	width: 12.5%;
+	height: 100px;
+	margin: 20px 2.5%;
+}
+.box10{
+	background-color: dodgerblue;
+	width: 12.5%;
+	height: 100px;
+	margin: 20px 2.5%;
+}
+
+.top-main, .bottom-main{
+	display:flex;
+	justify-content: space-between;
+	align-content: center;
+	font-size: 14px;
+	margin: 25px auto;
+}
+
+.top-main {
+	border-top: 1px dashed black;
+	padding: 25px;
+}
+
+.bottom-main {
+	padding: 0 25px 10px 25px;
+}
+
+.top-main div, .bottom-main div{
+	width:350px;
+	border-bottom: 1px dashed black;
+	padding:0 0 10px 0;
+}
+
+.top-main img, .bottom-main img{
+	width: 300px;
+	margin: 0 0 10px 0;
+}
+
+
+
+
+.top-main h2 .bottom-main h2, .footer-main h2{
+	font-size: 16px;
+	margin: 10px auto;
+}
+
+.footer-main{
+	font-size: 14px;
+	margin: 25px auto;
+}
+
+.about-page{
+	font-size: 16px;
+}
